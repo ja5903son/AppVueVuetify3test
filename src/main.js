@@ -15,6 +15,13 @@ import App from './App.vue'
 const vuetify = createVuetify({
   components,
   directives,
+  defaults:{
+    VBtn:{variant: "outlined"},
+    vTextField:{variant: "solo"}
+  },
+  theme:{
+    defaultTheme: "dark"
+  }
 })
 
 createApp(App).use(vuetify).use(router).mount('#app')
